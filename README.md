@@ -8,7 +8,7 @@ This library provides a custom PHP **Stream Wrapper**, allowing you to register 
 2. **Install dependencies** using Composer:
 
    ```sh
-   composer require simp/stream-wrapper
+   composer require simp/streamwrapper
    ```
 
 ## Usage
