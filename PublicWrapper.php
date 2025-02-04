@@ -5,5 +5,5 @@ class PublicWrapper extends \Simp\StreamWrapper\Stream\StreamWrapper
 {
     protected string $stream_name = "public";
 
-    protected string $basePath = "sites/public";
+    protected string $base_path = "sites/public";
 }

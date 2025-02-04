@@ -45,7 +45,7 @@ echo file_get_contents("public://example.txt");
 
 ### 3. Customizing the Public Wrapper
 
-The `PublicWrapper.php` file extends the base `StreamWrapper` class, setting a custom `$stream_name` and `$basePath`:
+The `PublicWrapper.php` file extends the base `StreamWrapper` class, setting a custom `$stream_name` and `$base_path`:
 
 ```php
 class PublicWrapper extends \Simp\StreamWrapper\Stream\StreamWrapper

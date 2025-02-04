@@ -13,7 +13,7 @@ class GlobalStreamWrapper implements WrapperInterface
     /**
      * @var string
      */
-    protected string $basePath = 'sites/files';
+    protected string $base_path = 'sites/files';
     /**
      * @var string
      */
@@ -46,9 +46,9 @@ class GlobalStreamWrapper implements WrapperInterface
     /**
      * @return string
      */
-    public function getBasePath(): string
+    public function getbase_path(): string
     {
-        return $this->basePath;
+        return $this->base_path;
     }
 
     /**
@@ -83,9 +83,9 @@ class GlobalStreamWrapper implements WrapperInterface
             $clear_stream = trim($this->stream_name, '/');
             $clear_stream = trim($clear_stream, ':');
 
-            $basePath = str_ends_with($this->basePath, '/') ? $this->basePath : $this->basePath . '/';
+            $base_path = str_ends_with($this->base_path, '/') ? $this->base_path : $this->base_path . '/';
 
-            $clean_path = str_replace($clear_stream . '://', $basePath, $path);
+            $clean_path = str_replace($clear_stream . '://', $base_path, $path);
             return str_replace('//', '/', $clean_path);
         }
 
