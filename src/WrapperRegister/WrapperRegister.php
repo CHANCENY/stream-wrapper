@@ -69,6 +69,6 @@ class WrapperRegister
 
     public static function getWrappers(): array
     {
-        return new self()->getStreamWrappers();
+        return (new self())->getStreamWrappers();
     }
 }
